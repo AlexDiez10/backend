@@ -137,3 +137,9 @@ FIREBASE_CRED = credentials.Certificate("keys/landing-key.json")
 firebase_admin.initialize_app(FIREBASE_CRED, {
     'databaseURL' : 'https://landing-9ec6e-default-rtdb.firebaseio.com/'
 })
+
+# Fallo: acceso sin autenticación
+LOGIN_URL = '/login/'
+    
+# Éxito: luego de autenticación exitosa
+LOGIN_REDIRECT_URL = '/'
